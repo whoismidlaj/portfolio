@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Whoismidlaj</title>
+  <title>Midlaj - Frontend Developer</title>
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,8 +26,8 @@
 
   <div class="container mx-auto mb-7 h-8">
     <nav class="hidden md:flex justify-end space-x-5">
-      <span class="text-xl font-bold hover:opacity-75 hover:border-b-2 border-slate-200">About</span>
-      <span class="text-xl font-bold hover:opacity-75 hover:border-b-2 border-slate-200">Contact</span>
+      <a href="#about" class="text-xl font-bold hover:opacity-75 hover:border-b-2 border-slate-200">About</a>
+      <a href="#projects" class="text-xl font-bold hover:opacity-75 hover:border-b-2 border-slate-200">Projects</a>
     </nav>
 
     <!-- Mobile Menu -->
@@ -38,9 +38,9 @@
       class="fixed top-0 left-0 w-screen flex h-screen justify-end items-center z-50 hidden">
       <div class="text-xl items-center font-bold p-10 py-32 w-3/4 h-full bg-slate-900/70 backdrop-blur-sm rounded-l-3xl">
         <button id="menuClose" class="absolute right-10 top-6 text-xl font-bold hidden">Close</button>
-        <p class="my-5">Home</p>
-        <p class="my-5">About</p>
-        <p class="my-5">Contact</p>
+        <a href="#" class="block my-5">Home</a>
+        <a href="#about" class="block my-5">About</a>
+        <a href="#projects" class="block my-5">Projects</a>
       </div>
     </div>
   </div>
@@ -51,10 +51,10 @@
     <span class="text-lg font-semibold text-zinc-50">Frontend Developer</span>
     <h1 class="text-6xl font-bold mt-5 text-zinc-50">Who <br />is Midlaj?</h1>
     <div class="absolute top-0 right-0 flex space-x-5 p-8">
-      <img class="w-7" src="/assets/img/social/codepen.svg" alt="" srcset="">
-      <img class="w-7" src="/assets/img/social/github.svg" alt="" srcset="">
-      <img class="w-7" src="/assets/img/social/instagram.svg" alt="" srcset="">
-      <img class="w-7" src="/assets/img/social/telegram.svg" alt="" srcset="">
+      <a href="https://github.com/whoismidlaj" class="group"><img class="w-7 group-hover:opacity-75" src="./assets/img/social/github.svg" alt="github"></a>
+      <a href="https://www.instagram.com/whoismidlaj/" class="group"><img class="w-7 group-hover:opacity-75" src="./assets/img/social/instagram.svg" alt="instagram"></a>
+      <a href="https://telegram.org/whoismidlaj" class="group"><img class="w-7 group-hover:opacity-75" src="./assets/img/social/telegram.svg" alt="telegram"></a>
+      <a href="https://codepen.io/whoismidlaj" class="group"><img class="w-7 group-hover:opacity-75" src="./assets/img/social/codepen.svg" alt="codepen"></a>
     </div>
   </div>
   <!-- HERO END -->
@@ -62,35 +62,40 @@
   <!-- Technology Marquee -->
   <div class="container mx-auto my-10">
     <div class="slide ease-linear flex space-x-6">
-      <img class="w-12 h-12" src="/assets/img/tech/bootstrap.svg" alt="Bootstrap" />
-      <img class="w-12 h-12" src="/assets/img/tech/css3.svg" alt="CSS3" />
-      <img class="w-12 h-12" src="/assets/img/tech/html5.svg" alt="HTML5" />
-      <img class="w-12 h-12" src="/assets/img/tech/tailwindcss.svg" alt="Tailwind CSS" />
-      <img class="w-12 h-12" src="/assets/img/tech/webpack.svg" alt="Webpack" />
-      <img class="w-12 h-12" src="/assets/img/tech/wordpress.svg" alt="WordPress" />
-      <img class="w-12 h-12" src="/assets/img/tech/nodedotjs.svg" alt="Node.js" />
-      <img class="w-12 h-12" src="/assets/img/tech/javascript.svg" alt="JavaScript" />
-      <img class="w-12 h-12" src="/assets/img/tech/vuedotjs.svg" alt="Vue.js" />
-      <img class="w-12 h-12" src="/assets/img/tech/visualstudiocode.svg" alt="Visual Studio Code" />
-      <img class="w-12 h-12" src="/assets/img/tech/archlinux.svg" alt="Arch Linux" />
+      <img class="w-12 h-12" src="./assets/img/tech/bootstrap.svg" alt="Bootstrap" />
+      <img class="w-12 h-12" src="./assets/img/tech/css3.svg" alt="CSS3" />
+      <img class="w-12 h-12" src="./assets/img/tech/html5.svg" alt="HTML5" />
+      <img class="w-12 h-12" src="./assets/img/tech/tailwindcss.svg" alt="Tailwind CSS" />
+      <img class="w-12 h-12" src="./assets/img/tech/webpack.svg" alt="Webpack" />
+      <img class="w-12 h-12" src="./assets/img/tech/wordpress.svg" alt="WordPress" />
+      <img class="w-12 h-12" src="./assets/img/tech/nodedotjs.svg" alt="Node.js" />
+      <img class="w-12 h-12" src="./assets/img/tech/javascript.svg" alt="JavaScript" />
+      <img class="w-12 h-12" src="./assets/img/tech/vuedotjs.svg" alt="Vue.js" />
+      <img class="w-12 h-12" src="./assets/img/tech/visualstudiocode.svg" alt="Visual Studio Code" />
+      <img class="w-12 h-12" src="./assets/img/tech/archlinux.svg" alt="Arch Linux" />
     </div>
   </div>
   <!-- Technology Marquee End -->
 
   <!-- About -->
 
-  <div class="container mx-auto my-14 md:my-20">
+  <div id="about" class="container mx-auto my-14 md:my-20">
 
     <h2 class="text-3xl font-bold mb-5">About Me</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       <div>
-        <p class="leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tenetur tempore amet molestiae totam, quidem consequuntur expedita quasi atque repellat odit commodi nemo sequi labore! Reprehenderit laborum animi qui velit sunt temporibus deleniti corporis repellat a doloribus quae, ut minima? Error, vitae. Nobis magni deserunt beatae nisi, nam error odio.</p>
+        <p class="leading-relaxed tracking-wide font-light">
+          I'm Midlaj, a web developer and front-end developer from India. With a keen eye for design and a passion for coding, I specialize in creating responsive, user-friendly websites with technologies such as HTML, CSS, Bootstrap, Tailwind CSS, Vue.js, and WordPress.
+        </p>
+        <p class="mt-5 leading-relaxed tracking-wide font-light">
+          I'm currently working as Web developer at <a class="font-normal underline underline-offset-2" href="https://blazonweb.in">BlazonWeb.in</a> , Kerala based digital marketing and software solution. 
+        </p>
       </div>
       <div class="flex justify-center md:justify-end items-center">
         <div class="grid grid-cols-2 gap-5 text-center font-semibold w-full md:w-max">
-          <a class="block col-span-2 border-2 rounded border-blue-500 py-3 px-5 hover:bg-blue-500" href="#">Resume</a>
-          <a class="block border-2 rounded border-blue-500 py-3 px-5 hover:bg-blue-500" href="#">Email</a>
-          <a class="block border-2 rounded border-blue-500 py-3 px-5 hover:bg-blue-500" href="#">Telegram</a>
+          <a href="./midlaj-resume.pdf" class="block col-span-2 border-2 rounded border-blue-500 py-3 px-5 hover:bg-blue-500" href="#">Resume</a>
+          <a class="block border-2 rounded border-blue-500 py-3 px-5 hover:bg-blue-500" href="mailto:midlaj@tuta.io">Email</a>
+          <a class="block border-2 rounded border-blue-500 py-3 px-5 hover:bg-blue-500" href="https://t.me/whoismidlaj">Telegram</a>
         </div>
       </div>
     </div>
@@ -100,32 +105,26 @@
   <!-- About End -->
 
   <!-- Cards -->
-  <div class="container mx-auto my-16">
+  <div id="projects" class="container mx-auto my-16">
     <h2 class="text-3xl font-bold mb-7">Featured Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="relative p-1 bg-blue-400 rounded-2xl transition overflow-hidden group">
-        <img class="rounded-xl" src="/assets/img/works/learnfolio.png" alt="LearnFolio">
-        <div class="hidden w-full h-full group-hover:flex justify-center items-center absolute top-0 left-0 backdrop-blur-sm bg-blue-500/50">
-          <a href="https://alrayahtourism.in" target="_blank" class="border-2 rounded py-3 px-5 font-bold hover:bg-blue-500/50">Live Preview</a>
-        </div>
-      </div>
-      <div class="relative p-1 bg-blue-400 rounded-2xl transition overflow-hidden group">
-        <img class="rounded-xl" src="/assets/img/works/alrayah.png" alt="Alrayah">
-        <div class="hidden w-full h-full group-hover:flex justify-center items-center absolute top-0 left-0 backdrop-blur-sm bg-blue-500/50">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="relative p-1 bg-blue-500 rounded-2xl transition overflow-hidden group">
+        <img class="rounded-xl" src="./assets/img/works/learnfolio.png" alt="LearnFolio">
+        <div class="hidden w-full h-full group-hover:flex justify-center items-center absolute top-0 left-0 bg-blue-500/30">
           <a href="https://learnfolio.in" target="_blank" class="border-2 rounded py-3 px-5 font-bold hover:bg-blue-500/50">Live Preview</a>
         </div>
       </div>
-      <div class="relative p-1 bg-blue-400 rounded-2xl transition overflow-hidden group">
-        <img class="rounded-xl" src="/assets/img/works/alrayah.png" alt="Alrayah">
-        <div class="hidden w-full h-full group-hover:flex justify-center items-center absolute top-0 left-0 backdrop-blur-sm bg-blue-500/50">
-          <a href="https://learnfolio.in" target="_blank" class="border-2 rounded py-3 px-5 font-bold hover:bg-blue-500/50">Live Preview</a>
+      <div class="relative p-1 bg-blue-500 rounded-2xl transition overflow-hidden group">
+        <img class="rounded-xl" src="./assets/img/works/alrayah.png" alt="Alrayah">
+        <div class="hidden w-full h-full group-hover:flex justify-center items-center absolute top-0 left-0 bg-blue-500/30">
+          <a href="https://alrayahtourism.in" target="_blank" class="border-2 rounded py-3 px-5 font-bold hover:bg-blue-500/10">Live Preview</a>
         </div>
       </div>
   </div>
   </main>
 
   <div class="container max-w-6xl mx-auto flex mt-20 py-5 justify-center bg-blue-600 bg-[url('../img/bg.jpg')] rounded-t-3xl">
-    <span class="text-center text-sm font-semibold text-white">made by <a>midlaj</a></span>
+    <span class="text-center text-sm font-semibold opacity-75">handcrafted by <a href="https://github.com/whoismidlaj/whoismidlaj.github.io" class="text-blue-500">midlaj</a></span>
   </div>
 
   <script src="./assets/js/bundle.js"></script>
